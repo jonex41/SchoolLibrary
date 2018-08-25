@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.promise.www.schoollibrary.MainActivity">
+    <item
+        android:id="@+id/search"
+        android:orderInCategory="100"
+        android:title="Search"
+        android:icon="@drawable/search"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_not"
+        android:orderInCategory="100"
+        android:title="Student"
+        android:icon="@drawable/search"
+        app:showAsAction="never" />
+</menu>

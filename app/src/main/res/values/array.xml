@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="books">
+
+        <item>Computer science</item>
+        <item>Biology</item>
+        <item>Physics</item>
+        <item>Math</item>
+
+    </string-array>
+</resources>

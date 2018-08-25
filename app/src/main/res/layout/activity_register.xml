@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:subtitle="Register in"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-LIBRARY"
+            android:textStyle="italic|bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:textSize="40sp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/register_layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/register_field_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_edittext"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/colorAccent" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/register_layout_reg_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+
+            android:paddingRight="20dp"
+            android:layout_marginTop="20dp">
+
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/register_field_reg_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Student Reg no(u18pz1036)"
+                android:maxEms="9"
+                android:ems="9"
+                android:padding="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/background_edittext"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/colorAccent" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/register_layout_passsword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/register_field_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:padding="10dp"
+               android:layout_marginTop="15dp"
+                android:background="@drawable/background_edittext"
+                android:inputType="numberPassword"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/colorAccent" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/registerAccount"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:textStyle="italic|bold"
+            android:background="@drawable/background_edittext"
+            android:text="@string/createaccount" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/siginagian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="10dp"
+            android:textStyle="italic|bold"
+            android:textAllCaps="false"
+            android:background="@drawable/background_edittext"
+            android:text="Already have an account or an admin, sign in" />
+    </android.support.v7.widget.LinearLayoutCompat>
+</ScrollView>
+</LinearLayout>

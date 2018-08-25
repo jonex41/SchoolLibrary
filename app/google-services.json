@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "389408720106",
+    "firebase_url": "https://promiseshoollibrary.firebaseio.com",
+    "project_id": "promiseshoollibrary",
+    "storage_bucket": "promiseshoollibrary.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389408720106:android:385144057a02f837",
+        "android_client_info": {
+          "package_name": "com.promise.www.schoollibrary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389408720106-stqp5rqsmcu9la5lisbo4mp78b37grmn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9YsyMOp9nMAl0pJ1pWW5x-zCKUOm3SHM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

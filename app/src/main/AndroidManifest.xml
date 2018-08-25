@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.promise.www.schoollibrary">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AllFPDFs"/>
+        <activity android:name=".Biology.BiologyActivity"/>
+        <activity android:name=".Chemistry.ChemistryActivity"/>
+        <activity android:name=".ComputerScience.ComputerActivity"/>
+        <activity android:name=".Physics.PhysicsActivity"/>
+        <activity android:name=".Physics.Phys102" />
+        <activity android:name=".Physics.Phys101" />
+        <activity android:name=".Math.Math102" />
+        <activity android:name=".Math.Math101" />
+        <activity android:name=".Biology.Biol102" />
+        <activity android:name=".Biology.Biol101" />
+        <activity android:name=".ComputerScience.Cosc102" />
+        <activity android:name=".ComputerScience.Cosc101" />
+        <activity android:name=".ClassForAllPdfs" />
+        <activity android:name=".Math.MathActivity" />
+        <activity android:name=".NOTE.Database.NoteActivity" />
+        <activity android:name=".NoteEditorActivity" />
+        <activity android:name=".PostBookActivity" />
+        <activity android:name=".PostImages" />
+
+    </application>
+
+</manifest>

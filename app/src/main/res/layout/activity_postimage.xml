@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/pickimages"
+
+        android:layout_marginTop="10dp"
+        android:background="@color/colorback"
+        android:text="Please click here pick the images you want to upload online..."/>
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+    android:id="@+id/hss"
+    android:layout_below="@+id/pickimages"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="horizontal"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/linearlayout"/>
+</HorizontalScrollView>
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="25dp"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        />
+<EditText
+    android:id="@+id/title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/hss"
+    android:paddingLeft="10dp"
+    android:hint="title of the book here..."
+   />
+
+    <Button
+        android:id="@+id/upload_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+       android:layout_alignParentBottom="true"
+       android:layout_marginBottom="10dp"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Please upload your images online"
+        />
+</RelativeLayout>

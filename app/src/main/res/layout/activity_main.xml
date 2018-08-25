@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:background="@color/colorback"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="School-Elibrary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/layoutforsearch"
+        android:background="@android:color/white"
+        android:weightSum="3"
+     android:visibility="gone"
+        android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:id="@+id/imgbackbutton"/>
+
+
+
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:hint="Search..."
+            android:layout_weight="2.8"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/edtsearch"
+
+            android:background="@android:color/white"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+           android:visibility="gone"
+            android:src="@drawable/cancel"
+            android:id="@+id/imgcancelbtn"/>
+    </LinearLayout>
+</RelativeLayout>
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/recyclerview"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:padding="10dp"
+    android:visibility="gone"
+    android:layout_below="@id/toolbar"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_weight="1.5"
+    android:weightSum="2">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view1"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        card_view:cardCornerRadius="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="4dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:scaleType="centerCrop"
+    android:src="@drawable/pdf"/>
+        <TextView
+            android:id="@+id/info_text1"
+            android:layout_width="match_parent"
+            android:gravity="bottom|center"
+            android:text="PDFS"
+            android:textColor="@android:color/white"
+            android:layout_height="match_parent" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view2"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        card_view:cardCornerRadius="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="4dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp"
+
+            android:src="@drawable/pictures"/>
+        <TextView
+            android:id="@+id/info_text2"
+            android:layout_width="match_parent"
+            android:gravity="bottom|center"
+            android:text="Past Questions"
+            android:textColor="@android:color/white"
+            android:layout_height="match_parent" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:weightSum="2">
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view3"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            card_view:cardCornerRadius="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+
+                    android:layout_marginBottom="8dp"
+
+                    android:src="@drawable/pictures"/>
+            <TextView
+                android:id="@+id/info_text3"
+                android:layout_width="match_parent"
+                android:gravity="bottom|center"
+                android:text="Notes"
+                android:textColor="@android:color/white"
+                android:layout_height="match_parent" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view4"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            card_view:cardCornerRadius="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+
+                android:layout_marginBottom="8dp"
+
+                android:src="@drawable/pictures"/>
+            <TextView
+                android:id="@+id/info_text4"
+                android:layout_width="match_parent"
+                android:gravity="bottom|center"
+                android:text="Settings"
+                android:textColor="@android:color/white"
+                android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:src="@drawable/edit"
+        android:id="@+id/fab"
+        android:layout_margin="16dp"/>
+</LinearLayout>
